@@ -1,0 +1,33 @@
+[package]
+name = "ria"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.25.5"
+regex = "1.11.1"
+clap = { version = "4.5.23", features = ["derive"] }
+
+
+[[bin]]
+name = "test"
+path = "src/bin/test.rs"
+
+[[bin]]
+name = "mandleboat"
+path = "src/bin/mandleboat.rs"
+[[bin]]
+name = "traits_impl"
+path = "src/bin/traits/traits_impl.rs"
+[[bin]]
+name = "vec_sum"
+path = "src/bin/traits/vec_sum.rs"
+[[bin]]
+name = "greplite"
+path = "src/bin/string/greplite.rs"
+[[bin]]
+name = "grep_ctx"
+path = "src/bin/string/grep_ctx.rs"
+[[bin]]
+name = "regex"
+path = "src/bin/string/regex.rs"
